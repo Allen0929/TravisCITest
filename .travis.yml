@@ -6,4 +6,4 @@ python:
 cache: pip
 install: pip -- version
 script:
-  - py.test --cov-report term-missing --cov app -v
+  - tests.test_operations.py --cov-report term-missing --cov app -v
