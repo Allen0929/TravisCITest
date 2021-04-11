@@ -4,7 +4,6 @@ python:
   - "3.3"
   - "3.4"
 cache: pip
-install:
-  - pip install -r requirements.txt
+install: pip -- version
 script:
   - py.test --cov-report term-missing --cov app -v
